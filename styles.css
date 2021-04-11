@@ -345,3 +345,141 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+@media screen and (max-width: 768px){
+    div.nav-bar{
+        padding: 2rem 2rem;
+        background-color: #304353;
+        position: relative;
+        width: 100%;
+        
+    }
+    
+    ul.nav-links{
+        position: fixed;
+        background-color: #304353;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        clip-path: circle(100px );
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+    }
+
+    .nav-links li a{
+        text-transform: uppercase;
+        font-size: larger;
+    }
+
+    ul.nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+    }
+
+    div.line{
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: #fff;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        z-index: 2;
+    }
+
+    div.hero-background {
+        display: block;
+        padding: 5%;
+    }
+
+    div.background {
+        padding: 5%;
+        width: 95%;
+    }
+
+    div.hero-background-pos {
+        position: relative;
+        left: 40%;
+    }
+
+    div.snapshot-box{
+        width: 100%;
+        padding: 4rem 4rem;
+    }
+
+    div.snapshot-team p {
+        margin: 0 2rem;
+    }
+
+    div.snapshot-box-content{
+        width: 100%;
+        display: block;
+        padding: none;
+    }
+
+    div.box1, div.box3{
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    div.box1 h5, div.box3 h5{
+        margin-bottom: 2rem;
+    }
+
+    div.gallery-img{
+        display: block;
+        padding: 2rem 0;
+    }
+
+    div.img{
+        width: 100%;
+        margin: 1rem 10px;
+    }
+
+    div.img img{
+        width: 100%;
+        height: auto;
+    }
+
+    div.footer{
+        padding: 3rem 7%;
+    }
+
+    div.footer-input{
+        display: block;
+        width: 100%;
+    }
+
+    div.footer-input input{
+        margin-bottom: 1rem;
+        padding: 10px 20px;
+        width: 90%;
+        border: 1px solid #bcc3c7;
+        background: transparent;
+        color: #f0f0f0;
+        font-size: 1rem;
+        border-radius: 2px;
+    }
+
+    div.footer-textarea{
+        display: block;
+        padding: 0;
+    }
+
+    textarea {
+    width: 90%;
+    height: 150px;
+    padding: 0.5rem;
+    border: 1px solid #bcc3c7;
+    background: transparent;
+    color: #f0f0f0;
+    }
+
+}

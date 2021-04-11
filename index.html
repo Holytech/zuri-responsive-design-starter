@@ -10,6 +10,13 @@
 <body>
     <div class="nav-bar">
         <div class="logo">Snapshot</div>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -103,5 +110,13 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        })
+    </script>
 </body>
 </html>
